@@ -1,17 +1,17 @@
-How to run game:
+How to run the game:
 
-Git clonse repo into desired folder.
+Git clone the repo into the desired folder.
 
-go to "Releases" Folder, Select the version of game you want to see, andd Open the application named "Addvon".
-game will lunch without external sources.
+go to the "Releases" Folder, Select the version of the game you want to see, and Open the application named "Addvon".
+the game will launch without external sources.
 
-if need to look at source code:
+if need to look at the source code:
 
-go to "src" folder instead of "Releases" where all game files will be found. c# scripts will be found in
+go to the "src" folder instead of "Releases" where all game files will be found. c# scripts will be found in
 Assets/scripts/...
 
-to open project in local Unity:
+to open the project in local Unity:
 
-open Unity Hub and Add new project and locate repo folder. 
-name project what you will.
-on create new project my game scenes, scripts, assets, and files will load in.
+open Unity Hub Add a new project and locate the repo folder. 
+name the project what you will.
+on creating a new project my game scenes, scripts, assets, and files will load in.
