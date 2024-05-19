@@ -1,0 +1,217 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Workspace\\src\\UnityGame\\Addvon\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|c:\\workspace\\src\\unitygame\\addvon\\assets\\scripts\\enemypotrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemypotrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\animbehaviorcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\animbehaviorcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\spawnsets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawnsets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\enemyanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyanimator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\humans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\humans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\scenetransitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenetransitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\arts\\cainos\\pixel art platformer - village props\\script\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\arts\\cainos\\pixel art platformer - village props\\script\\chest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\npcdial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\npcdial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\interactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interactionmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|C:\\Workspace\\src\\UnityGame\\Addvon\\assets\\scripts\\inventory\\inventoey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39C1D761-2A78-2FDD-FA84-72F79FC2F87A}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventory\\inventoey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Humans.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\Humans.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Humans.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\Humans.cs",
+              "RelativeToolTip": "Assets\\scripts\\Humans.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAgAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-08T17:45:37.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Player.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\scripts\\Player.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAgwIYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-06T22:12:29.52Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SpawnSets.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\SpawnSets.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\SpawnSets.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\SpawnSets.cs",
+              "RelativeToolTip": "Assets\\scripts\\SpawnSets.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAABwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T17:22:53.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Chest.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\Arts\\Cainos\\Pixel Art Platformer - Village Props\\Script\\Chest.cs",
+              "RelativeDocumentMoniker": "Assets\\Arts\\Cainos\\Pixel Art Platformer - Village Props\\Script\\Chest.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\Arts\\Cainos\\Pixel Art Platformer - Village Props\\Script\\Chest.cs",
+              "RelativeToolTip": "Assets\\Arts\\Cainos\\Pixel Art Platformer - Village Props\\Script\\Chest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-16T17:29:28.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Inventoey.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\Inventory\\Inventoey.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\Inventory\\Inventoey.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\Inventory\\Inventoey.cs",
+              "RelativeToolTip": "Assets\\scripts\\Inventory\\Inventoey.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAZAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVDhP7VNdSFNhGH7POds8znNy080/BIXldAbJcEkXiaChXRRCCIGK6E1CV/lDeZHl8EowxYtAIgxC7CIvRIe48kLDC5Vz41EmbhpDS51uudOmubNztr7vuILqoiDoyufie3nP9/B8z/tz4Bz/DCoRYc23xlTdqUpXl6rZ6NUoa6g0sJabFrasrkzjmnJ9xZxgMKhnKhi9\u002B6JbI8wJkc7OTuN28fYF\u002BbIMh/OHIuaQ\u002BMAQT8RWJM9JGolTkSpOikkcQRKcilINJigggzyI72gVPRgOhw2RWGRGDWouQkVaExQg8MF7\u002BW7nprNxZXfFTFM0FGcWA5PEABKFiBRxtJS2NGGxoYWhG/Nb85neI68PifLWXGu559BDH50cuUmCHN18vNmrOFz8uHjFG/Ca4/E41JhrwiU5JU\u002BtOVZ7gaHAnsVkvU5NTY3G4rHVbDZbMDJGIAhC0Gq0fJGxKMomsdjWLpLZwloK6l7UTda/rI/bHXZfKBR6hXqVlrj6CYEvgcm\u002Bt31xU69p6iB8kB0QAp\u002BaR5tx3pOgnPVww78BGpUGdFrdMsuyTTqd7rNymwByTqKHMvxhP30sHqMPQA8vDGf4Qj5KlEVkkGByn\u002BQqJhRBSZZwANRwJf6K7wMYeD9QPs6PQzQWvTayOOJsGGswcDscyDH5Lh4U5iqC\u002Bfp8OJVOgd/ncfobUlJSBOTqYe2lWr7CVIEfXjUbzQ\u002B6KruEQmMhoIE4UF\u002BfYa5iqbqoGlz7LnAfuM1tb9p6cM5oGEAlwl5oz02S5BiivQsEAwa0CYUkkG7nPeekP\u002Bg3Tq9Ps6jmOc8jzzLWUtZm6cNS94xrphEttzlNmwaWDAskq5NxaSBKoqP9evstzPsbKIIYs\u002BuzHWh1OiZWJ2BH2AGKpMCUboI8fd5s/\u002B3\u002BpgTtj/jxp9BAP0fBRkqkDfXEhiZro\u002BKUTY7K988Y5/g/APgG2Ocp0eSbumcAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-01-05T23:16:49.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerControl.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\PlayerControl.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerControl.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\PlayerControl.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerControl.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAUwH4AAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-06-09T16:40:05.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SceneTransitions.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\SceneTransitions.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\SceneTransitions.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\SceneTransitions.cs",
+              "RelativeToolTip": "Assets\\scripts\\SceneTransitions.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwC4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-09T22:21:09.946Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InteractionManager.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\InteractionManager.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\InteractionManager.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\InteractionManager.cs",
+              "RelativeToolTip": "Assets\\scripts\\InteractionManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAmAAAA",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALNSURBVDhP7VNdSFNhGH7POds8znNy080/BIXldAbJcEkXiaChXRRCCIGK6E1CV/lDeZHl8EowxYtAIgxC7CIvRIe48kLDC5Vz41EmbhpDS51uudOmubNztr7vuILqoiDoyufie3nP9/B8z/tz4Bz/DCoRYc23xlTdqUpXl6rZ6NUoa6g0sJabFrasrkzjmnJ9xZxgMKhnKhi9\u002B6JbI8wJkc7OTuN28fYF\u002BbIMh/OHIuaQ\u002BMAQT8RWJM9JGolTkSpOikkcQRKcilINJigggzyI72gVPRgOhw2RWGRGDWouQkVaExQg8MF7\u002BW7nprNxZXfFTFM0FGcWA5PEABKFiBRxtJS2NGGxoYWhG/Nb85neI68PifLWXGu559BDH50cuUmCHN18vNmrOFz8uHjFG/Ca4/E41JhrwiU5JU\u002BtOVZ7gaHAnsVkvU5NTY3G4rHVbDZbMDJGIAhC0Gq0fJGxKMomsdjWLpLZwloK6l7UTda/rI/bHXZfKBR6hXqVlrj6CYEvgcm\u002Bt31xU69p6iB8kB0QAp\u002BaR5tx3pOgnPVww78BGpUGdFrdMsuyTTqd7rNymwByTqKHMvxhP30sHqMPQA8vDGf4Qj5KlEVkkGByn\u002BQqJhRBSZZwANRwJf6K7wMYeD9QPs6PQzQWvTayOOJsGGswcDscyDH5Lh4U5iqC\u002Bfp8OJVOgd/ncfobUlJSBOTqYe2lWr7CVIEfXjUbzQ\u002B6KruEQmMhoIE4UF\u002BfYa5iqbqoGlz7LnAfuM1tb9p6cM5oGEAlwl5oz02S5BiivQsEAwa0CYUkkG7nPeekP\u002Bg3Tq9Ps6jmOc8jzzLWUtZm6cNS94xrphEttzlNmwaWDAskq5NxaSBKoqP9evstzPsbKIIYs\u002BuzHWh1OiZWJ2BH2AGKpMCUboI8fd5s/\u002B3\u002BpgTtj/jxp9BAP0fBRkqkDfXEhiZro\u002BKUTY7K988Y5/g/APgG2Ocp0eSbumcAAAAASUVORK5CYII=",
+              "WhenOpened": "2024-01-09T22:22:43.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "npcDial.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\npcDial.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\npcDial.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\npcDial.cs",
+              "RelativeToolTip": "Assets\\scripts\\npcDial.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-09T22:39:15.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AnimBehaviorControl.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\AnimBehaviorControl.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\AnimBehaviorControl.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\AnimBehaviorControl.cs",
+              "RelativeToolTip": "Assets\\scripts\\AnimBehaviorControl.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAQwB0AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-08T20:07:25.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemyPotrol.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\EnemyPotrol.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\EnemyPotrol.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\EnemyPotrol.cs",
+              "RelativeToolTip": "Assets\\scripts\\EnemyPotrol.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAgwIMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-08T22:22:30.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnemyAnimator.cs",
+              "DocumentMoniker": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\EnemyAnimator.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\EnemyAnimator.cs",
+              "ToolTip": "C:\\Workspace\\src\\UnityGame\\Addvon\\Assets\\scripts\\EnemyAnimator.cs",
+              "RelativeToolTip": "Assets\\scripts\\EnemyAnimator.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-09T22:21:09.948Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
