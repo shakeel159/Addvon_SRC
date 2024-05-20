@@ -38,11 +38,11 @@ public class SceneTransitions : MonoBehaviour
             //SceneManager.LoadScene("LevelTwo");
 
             //Tramsport Player to new level instead of Scene // to much things get reset when changing scenes
-            //playerObject.transform.position = new Vector3(SpawnPosition.transform.position.x, SpawnPosition.transform.position.y, SpawnPosition.transform.position.z);
-            //levelOne.SetActive(false);
-            //levelTwo.SetActive(true);
+            playerObject.transform.position = new Vector3(SpawnPosition.transform.position.x, SpawnPosition.transform.position.y, SpawnPosition.transform.position.z);
+            levelOne.SetActive(false);
+            levelTwo.SetActive(true);
 
-            SceneManager.LoadScene("TestLab");
+            //SceneManager.LoadScene("TestLab");
         }
     }
 }
