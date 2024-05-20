@@ -5,9 +5,9 @@ Genre: 2D platformer, action adventure, rpg, coop
 Addvon is about exploring and completing quest to provide for and protect your village. player will start of as newbie adventure completing basic quests earning money for armour and wepons. when player has explored all of there hometown and ranked up new worlds await for player to discover.
 
 ## Goals:
--build level,
--Add enemeis,
--Loot/Inventory system,
+-build level.
+-Add enemeis.
+-Loot/Inventory system.
 -boss fight to end Levl One
 
 
