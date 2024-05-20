@@ -1,4 +1,4 @@
-## How to run the game:
+## How to run the game
 
 ### Git clone the repo into the desired folder.
 
