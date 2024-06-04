@@ -102,8 +102,7 @@ public class PlayerControl : MonoBehaviour
         }
 
         UseItems();
-        //OpenMenuButton();
-       // movementStop();
+        MenuBtnPress();
     }
     public void InteractButton()
     {
@@ -124,7 +123,14 @@ public class PlayerControl : MonoBehaviour
             isUsingFood = true;
         }
     }
-  
+    
+    public void MenuBtnPress()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            isInMenu = true;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision) // fix to work with feet not entire player collider
     {
         // get the direction of the collision

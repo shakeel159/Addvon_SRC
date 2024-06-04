@@ -123,6 +123,11 @@ public class Player : Humans
                 //StartCoroutine(changeStateToNormal());
                 break;
         }
+        if(control.isInMenu == true)
+        {
+            MainMenuUI.SetActive(true);
+            control.enabled = false;
+        }
         if (playerState == PlayerState.Dead)
         {
             anim.isDead = true;
@@ -173,12 +178,8 @@ public class Player : Humans
         control.inStun = true;
         isHit = true;
         control.rb.AddForce(knockBack, ForceMode2D.Impulse);
-        //control.horizontalInput = 0;
-        //transform.localScale = new Vector2((Mathf.Sign(control.rb.velocity.x) * 2.25f), transform.localScale.y);
         healthBar.SetHealth(currentHealth);
         staminaBar.SetStamina(currentStamina);
-        //Debug.Log("PRE STUNN");
-        //control.actionState = PlayerControl.ActionState.Stunned;
     }
     private IEnumerator changeStateToNormal()
     {
@@ -209,13 +210,27 @@ public class Player : Humans
         foreach (var enemy in hitEnemiesFront)
         {
             //Debug.Log("enemy hit");
-            enemy.GetComponent<EnemyPotrol>().DmgTaken(attackDmg);
+            if(enemy.tag == "boss")
+            {
+                enemy.GetComponent<bossScript>().DmgTaken(attackDmg);
+            }
+            else
+            {
+                enemy.GetComponent<EnemyPotrol>().DmgTaken(attackDmg);
+            }
 
         }
         foreach (var enemy in hitEnemiesBack)
         {
-            //Debug.Log("enemy hit");
-            enemy.GetComponent<EnemyPotrol>().DmgTaken(attackDmg);
+            //Debug.Log("enemy hit");    
+            if (enemy.tag == "boss")
+            {
+                enemy.GetComponent<bossScript>().DmgTaken(attackDmg);
+            }
+            else
+            {
+                enemy.GetComponent<EnemyPotrol>().DmgTaken(attackDmg);
+            }
         }
     }
     private void OnDrawGizmosSelected()
@@ -223,9 +238,6 @@ public class Player : Humans
         if (attackPointFront == null)
             return;
         Gizmos.DrawWireSphere(attackPointFront.position, attackRanf);
-        //if (attackPointBack == null)
-        //    return;
-        //Gizmos.DrawWireSphere(attackPointBack.position, attackRanf);
     }
     private void Die()
     {

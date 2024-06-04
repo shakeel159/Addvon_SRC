@@ -17,6 +17,7 @@ TagManager:
   - shroom
   - Board
   - Npc
+  - boss
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - Chests
   - Enemy
   - Dummy
-  - 
+  - Boss
   - Trees-Background
   - 
   - mountains_Background

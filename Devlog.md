@@ -24,6 +24,20 @@ enemy state. changing enemy state from patrolling between to walls to chasing pl
 above goals completed execpt boss fight
 base set for multiple level creation, after boss imlementation create level 2 for build 2 release.
 
+BuildOne.Two:
+Level 2 designed and implemented, decorated with envirnmental peices and active patrolling enemies.
+UI improved with more features implemeted such as setting menu, provided music audio scaling, UI scaling.
+Boss put in place with additional UI boss on boss fight start.
+
+Next To Implement:
+<BOSS FIGHT LOGIC>
+switch statement:
+	Idle behvaiour => stay one position, idle animation, if(in fight => waitForSeconds(RO seitch To different state));
+	Chasing Behaviour => walk animation, fallow player position, when in position switch to different attack mode.
+	MultipleAttackModes => play attack animations, randomize attack if muliple, if distance atttack available play distance attack when durther from player, change to IDLE or Chasing state after attack.
+
+
+	
 
 # CREDITS:
 ### ASSETS USED FROM:
@@ -43,3 +57,7 @@ https://adwitr.itch.io/pixel-health-bar-asset-pack-2?download
 https://luizmelo.itch.io/monsters-creatures-fantasy?download
 
 https://msfrantz.itch.io/free-fire-ball-pixel-art
+
+https://pixabay.com/sound-effects/civil-war-fanfares-15645/
+
+

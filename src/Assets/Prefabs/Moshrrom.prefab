@@ -227,13 +227,11 @@ GameObject:
   - component: {fileID: 5488723669911628095}
   - component: {fileID: 2633403861688358585}
   - component: {fileID: 7411641492945889844}
-  - component: {fileID: 7830576448801015835}
   - component: {fileID: 5728290347234186347}
   - component: {fileID: 6600100613617306873}
   - component: {fileID: 5712579491968902345}
   - component: {fileID: 7208082848802721847}
   - component: {fileID: 1469224102391960785}
-  - component: {fileID: 6418526568173242027}
   - component: {fileID: 6911877057729621176}
   m_Layer: 0
   m_Name: Moshrrom
@@ -301,7 +299,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1603228847, guid: b5dbc9d02a0b8fb458b25b63cad2ef7c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -334,18 +332,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7830576448801015835
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8630326161383405377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbef9360fc0f60946acde757332a8093, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5728290347234186347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -482,21 +468,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &6418526568173242027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8630326161383405377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03bdbca265c3bed4a946ebd5091d23a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  flashDuration: 0.2
-  flashMaterial: {fileID: 2100000, guid: 70ffca42095404f42b020667ad493f0e, type: 2}
+  m_Constraints: 2
 --- !u!114 &6911877057729621176
 MonoBehaviour:
   m_ObjectHideFlags: 0
