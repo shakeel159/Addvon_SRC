@@ -77,7 +77,6 @@ public class PlayerControl : MonoBehaviour
         }
         else if (isOnGround == true && Input.GetMouseButtonDown(0))
         {
-
             if (Mathf.Abs(horizontalInput) > 0)
             {
                 actionState = ActionState.Walk_Attack;
@@ -85,7 +84,6 @@ public class PlayerControl : MonoBehaviour
             else
             {
                 actionState = ActionState.Attack;
-
             }
         }
         else if (isOnGround == true && Input.GetKeyDown(KeyCode.X))

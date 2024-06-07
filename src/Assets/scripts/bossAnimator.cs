@@ -34,6 +34,17 @@ public class bossAnimator : MonoBehaviour
         animator.SetTrigger("attackOne");
         isSwinging = false;
     }
+    public void AttackMaleeAnimation()
+    {
+        animator.SetTrigger("attackTwo");
+        //StartCoroutine(secondPartAniamtion());
+        isSwinging = false;
+    }
+    IEnumerator secondPartAniamtion()
+    {
+        yield return new WaitForSeconds(2f);
+        animator.SetTrigger("attaclTwoPartTwo");
+    }
     public void StunnedAnimation()
     {
         animator.SetTrigger("stunned");

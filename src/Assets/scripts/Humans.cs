@@ -51,7 +51,6 @@ public abstract class Humans : MonoBehaviour
         {
             currentHealth = 0;
             playerState = PlayerState.Dead;
-            Debug.Log("player state: " + playerState);
 
         }
         else

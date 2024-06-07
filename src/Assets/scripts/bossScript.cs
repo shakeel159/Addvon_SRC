@@ -28,6 +28,7 @@ public class bossScript : Humans
     Collider2D[] hitplayerFront;
     public LayerMask playerLayer;
     public Transform attackPointFront;
+    public Transform attackPointFrontMalee;
     public GameObject player;
     public float attackDistance;
     public float attackRanf;
@@ -38,8 +39,7 @@ public class bossScript : Humans
     public bool flip;
     private bool dashAttack;
     private bool closeAttack;
-    private float rechargDash;
-    private float rechargeMalee;
+    bool canUseDash;
 
     public Slider healthBar;
     // Start is called before the first frame update
@@ -53,10 +53,9 @@ public class bossScript : Humans
         healthBar.maxValue = currentHealth;
         healthBar.value = currentHealth;
         knockBack = new Vector2(3f, 0.0f);
-        attackRanf = 1.4f;
-        attackRanTwo = 0.6f;
-        rechargDash = 10f;
-        rechargeMalee = 5f;
+        attackRanf = 2.2f;
+        attackRanTwo = 1.4f;
+        canUseDash = true;
     }
 
     // Update is called once per frame
@@ -77,9 +76,10 @@ public class bossScript : Humans
                 anime.IdleAnimation();
                 Speed = 0f;
                 //if(attackStarted == true) => wait#secForStateSwitch;
-                if(attackStarted == true)
+                if (attackStarted == true)
                 {
-                    StartCoroutine(DelayIdle());
+                    DelayIdle();
+                    //StartCoroutine(DelayChasing());
                 }
                 break;
             case BehaviourState.Chasing:
@@ -101,15 +101,15 @@ public class bossScript : Humans
                 anime.isSwinging = false;
                 EnemyRb.AddForce(knockBack, ForceMode2D.Impulse);
                 anime.StunnedAnimation();
-                StartCoroutine(DelayIdle());
+                //StartCoroutine(DelayIdle());
+                behaviour_State = BehaviourState.Idle;
                 break;
             case BehaviourState.Attacking:
-                dashAttack = true;
                 speed = 0f;
+                coll.isTrigger = true;
                 StartCoroutine(DelayAttack());
                 break;
             case BehaviourState.AttckingTwo:
-                closeAttack = true;
                 speed = 0f;
                 StartCoroutine(DelayAttack());
                 break;
@@ -125,40 +125,49 @@ public class bossScript : Humans
         if(anime.isDead == false)
         {
             AttackAnim();
-            RechargeDahs();
+        }
+        if (canUseDash == false)
+        {
+            StartCoroutine(delayDashUsage());
         }
         DeathSequence();
     }
+    IEnumerator delayDashUsage()
+    {
+        yield return new WaitForSeconds(6f);
+        canUseDash = true;
+    }
     IEnumerator DestroyGameObject()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(5f);
         Destroy(this.gameObject);
     }
     private void AttackAnim()// change state to attack and play attack animation when close to player
     {
-        if (Vector2.Distance(transform.position, player.transform.position) < attackRanf && rechargDash > 0) //AND is swinging sword;
+        if (Vector2.Distance(transform.position, player.transform.position) < attackRanf) //AND is swinging sword;
         {
-            behaviour_State = BehaviourState.Attacking; //Temporarly play normal attack // future randomize attack from 1 to 3
-            rechargDash = 0;
-        }
-        if (Vector2.Distance(transform.position, player.transform.position) < attackRanTwo && rechargeMalee > 0) //AND is swinging sword;
-        {
-            behaviour_State = BehaviourState.AttckingTwo; //Temporarly play normal attack // future randomize attack from 1 to 3
-            rechargeMalee = 0;
+            if (canUseDash == true)
+            {
+                dashAttack = true;
+                Debug.Log("DASH COLLISION IN PLAY");
+                behaviour_State = BehaviourState.Attacking; //Temporarly play normal attack // future randomize attack from 1 to 3
+                canUseDash = false;
+            }
+
         }
 
-    }
-    void RechargeDahs()
-    {
-        if(rechargDash != 10)
+        if (Vector2.Distance(transform.position, player.transform.position) < attackRanTwo)
         {
-            rechargDash += Time.deltaTime;
+            //coll.isTrigger = true;
+            if (canUseDash == false)
+            {
+                closeAttack = true;
+                Debug.Log("Mallee COLLISION IN PLAY");
+                behaviour_State = BehaviourState.AttckingTwo;
+            }
         }
-        if(rechargeMalee != 5f)
-        {
-            rechargeMalee += Time.deltaTime;
+           
         }
-    }
     private bool IsFacingRight()//Checks if object is facing right and send sback bool if true else false
     {
         return transform.localScale.x > Mathf.Epsilon;
@@ -177,15 +186,13 @@ public class bossScript : Humans
 
         transform.localScale = scale;
     }
-    private IEnumerator DelayIdle()
+    private void DelayIdle()
     {
         if (anime.isDead == false)
         {
-           
-            yield return new WaitForSeconds(2f);
             if (Vector2.Distance(transform.position, player.transform.position) < attackRanTwo)
             {
-                behaviour_State = BehaviourState.AttackingOne;
+                behaviour_State = BehaviourState.AttckingTwo;
             }
             else
             {
@@ -193,6 +200,11 @@ public class bossScript : Humans
             }
 
         }
+    }
+    private IEnumerator DelayChasing()
+    {
+        yield return new WaitForSeconds(1f);
+        behaviour_State = BehaviourState.Chasing;
     }
     private void DeathSequence()
     {
@@ -221,16 +233,17 @@ public class bossScript : Humans
         float maleeDMG = attackDmg - 5;
         if (anime.isDead == false)
         {
-            anime.AttackAnimation();
             if (dashAttack == true)
             {
-                yield return new WaitForSeconds(2f);
+                anime.AttackAnimation();
+                yield return new WaitForSeconds(1.5f);
                 anime.isSwinging = true;
                 BasicAttack(dashDMG);
             }
             if(closeAttack == true)
             {
-                yield return new WaitForSeconds(.8f);
+                anime.AttackMaleeAnimation();
+                yield return new WaitForSeconds(1f);
                 anime.isSwinging = true;
                 BasicAttack(maleeDMG);
             }
@@ -247,19 +260,20 @@ public class bossScript : Humans
         }
         if(closeAttack == true)
         {
-            hitplayerFront = Physics2D.OverlapCircleAll(attackPointFront.position, attackRanTwo, playerLayer);
+            hitplayerFront = Physics2D.OverlapCircleAll(attackPointFrontMalee.position, attackRanf, playerLayer);
             closeAttack = false;
         }
-       
 
         foreach (var playerObject in hitplayerFront)
         {
             if (playerObject.GetComponent<Player>().isHit == true)
             {
-                Invoke("returnNotHit", .4f);
+                //Invoke("returnNotHit", .4f);
+                returnNotHit();
             }
             else if (playerObject.GetComponent<Player>().isHit == false && anime.isSwinging == true)
             {
+                
                 playerObject.GetComponent<Player>().DmgTaken(dmg);
             }
         }
@@ -274,14 +288,23 @@ public class bossScript : Humans
         isHit = true;
         behaviour_State = BehaviourState.stunned;
     }
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Triggered by: " + other.gameObject.name);
+        //if(collision.gameObject.tag == "Player")
+        //{
+        //    if (behaviour_State != BehaviourState.Attacking)
+        //    {
+        //        closeAttack = true;
+        //        Debug.Log("DASH COLLISION IN PLAY");
+        //        behaviour_State = BehaviourState.AttckingTwo;
+        //    }
+        //    coll.isTrigger = true;
+        //}
+      
     }
-    // This will be called when the collider exits a trigger collider
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        Debug.Log("Trigger exited by: " + other.gameObject.name);
+        //coll.isTrigger = false;
     }
     public void OnDrawGizmosSelected()
     {

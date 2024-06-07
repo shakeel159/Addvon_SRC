@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -141,7 +141,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_0
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 60
+        width: 60
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7877dd3b4f861af4ab99b0e1dd5d5a00
+      internalID: -1379096744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_1
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 38
+        width: 116
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713e377b14803b649b4d1f4a2440cf5a
+      internalID: -2043692707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_11
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 38
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecced2e14c918034c9453a6a5e09e7df
+      internalID: 88287867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_12
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 38
+        width: 105
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3128a555de0e34cb77cf14d7958b72
+      internalID: 2130064986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 71
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8961528c654677b4d98188a6fb4e7f2d
+      internalID: 427439408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_19
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 70
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97fbb0955f513a49872948bf78aab20
+      internalID: 1535143001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_20
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 69
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ddc9a29e4bf5647b581797eb37e96f
+      internalID: -190700336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_21
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 68
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9473f2021b2fdc4418a81a8f0dba438c
+      internalID: 470438369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_22
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 71
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af06f6cfa5b4f6842b8b9cb58268cc4e
+      internalID: 1641983514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_23
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 71
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c4b7cc9a883044f947038209676ced
+      internalID: 1767109685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_31
+      rect:
+        serializedVersion: 2
+        x: 1824
+        y: 38
+        width: 72
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7cd4cc9a06a9c4c89dd01f7d176ad5
+      internalID: -1577368107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_32
+      rect:
+        serializedVersion: 2
+        x: 1953
+        y: 38
+        width: 71
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b491174bbcc120e47a95900854373dbf
+      internalID: 972190258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_33
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 38
+        width: 72
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f7bb4d034a5c244abe802e89ffdc7bc
+      internalID: -888955970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_34
+      rect:
+        serializedVersion: 2
+        x: 2227
+        y: 47
+        width: 53
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84094fc59e08fa6499856e9d158ba647
+      internalID: 1136246037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_36
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 38
+        width: 119
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9684b4a9dd1c7547a7ca697db565205
+      internalID: -1200698315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sibuna - jumpAttack-fall_39
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 36
+        width: 119
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c122b144946a3f4896098bb2aadee6a
+      internalID: 1662307159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -152,7 +488,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Sibuna - jumpAttack-fall_0: -1379096744
+      Sibuna - jumpAttack-fall_1: -2043692707
+      Sibuna - jumpAttack-fall_10: 591436308
+      Sibuna - jumpAttack-fall_11: 88287867
+      Sibuna - jumpAttack-fall_12: 2130064986
+      Sibuna - jumpAttack-fall_13: 484069942
+      Sibuna - jumpAttack-fall_14: -1290930396
+      Sibuna - jumpAttack-fall_15: 354592432
+      Sibuna - jumpAttack-fall_16: 273477426
+      Sibuna - jumpAttack-fall_17: 50330271
+      Sibuna - jumpAttack-fall_18: 427439408
+      Sibuna - jumpAttack-fall_19: 1535143001
+      Sibuna - jumpAttack-fall_2: -1566812239
+      Sibuna - jumpAttack-fall_20: -190700336
+      Sibuna - jumpAttack-fall_21: 470438369
+      Sibuna - jumpAttack-fall_22: 1641983514
+      Sibuna - jumpAttack-fall_23: 1767109685
+      Sibuna - jumpAttack-fall_24: -1252718048
+      Sibuna - jumpAttack-fall_25: -2098336405
+      Sibuna - jumpAttack-fall_26: 846268726
+      Sibuna - jumpAttack-fall_27: 2004858989
+      Sibuna - jumpAttack-fall_28: 1098795813
+      Sibuna - jumpAttack-fall_29: -454327262
+      Sibuna - jumpAttack-fall_3: 1465683637
+      Sibuna - jumpAttack-fall_30: -1473197761
+      Sibuna - jumpAttack-fall_31: -1577368107
+      Sibuna - jumpAttack-fall_32: 972190258
+      Sibuna - jumpAttack-fall_33: -888955970
+      Sibuna - jumpAttack-fall_34: 1136246037
+      Sibuna - jumpAttack-fall_35: -1608947038
+      Sibuna - jumpAttack-fall_36: -1200698315
+      Sibuna - jumpAttack-fall_37: -1489053347
+      Sibuna - jumpAttack-fall_38: -819711240
+      Sibuna - jumpAttack-fall_39: 1662307159
+      Sibuna - jumpAttack-fall_4: 913993723
+      Sibuna - jumpAttack-fall_40: 515448729
+      Sibuna - jumpAttack-fall_41: 1173734038
+      Sibuna - jumpAttack-fall_42: -1066036133
+      Sibuna - jumpAttack-fall_43: -1712878070
+      Sibuna - jumpAttack-fall_44: -931197207
+      Sibuna - jumpAttack-fall_45: -1240311021
+      Sibuna - jumpAttack-fall_46: -847821565
+      Sibuna - jumpAttack-fall_47: 2063883904
+      Sibuna - jumpAttack-fall_48: 975533220
+      Sibuna - jumpAttack-fall_5: -1348171815
+      Sibuna - jumpAttack-fall_6: 487304465
+      Sibuna - jumpAttack-fall_7: 980585074
+      Sibuna - jumpAttack-fall_8: -54748965
+      Sibuna - jumpAttack-fall_9: 86955487
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

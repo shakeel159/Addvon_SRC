@@ -37652,37 +37652,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b888c4a8b2cfbd489d9bfde7a9b4d27, type: 3}
---- !u!1 &275967393 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8832694050323789675, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-  m_PrefabInstance: {fileID: 505979612145786729}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &275967394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7667063201168310115, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
   m_PrefabInstance: {fileID: 505979612145786729}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &275967398 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 5966528391574938534, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-  m_PrefabInstance: {fileID: 505979612145786729}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &275967402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 275967393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eee558132b30d44bb75986ef34f2044, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 275967398}
-  isIdle: 0
-  isDead: 0
-  isSwinging: 0
 --- !u!4 &293687700 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 202412249482032101, guid: 4b888c4a8b2cfbd489d9bfde7a9b4d27, type: 3}
@@ -85800,33 +85774,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 989130452}
     m_Modifications:
-    - target: {fileID: 772065596737710149, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: m_Layer
-      value: 9
+    - target: {fileID: 1172914524203171660, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1667162245168245273, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2102132825235660199, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: Name
-      value: boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: anime
-      value: 
-      objectReference: {fileID: 275967402}
     - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 747004405}
     - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
       propertyPath: attackDmg
-      value: 20
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
       propertyPath: healthBar
@@ -85836,22 +85794,6 @@ PrefabInstance:
       propertyPath: bossHealthUI
       value: 
       objectReference: {fileID: 1710925363}
-    - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: currentHealth
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: attackDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: playerLayer.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3443734438487091845, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7013849692614342617, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -85904,22 +85846,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Sibuna '
       objectReference: {fileID: 0}
-    - target: {fileID: 8832694050323789675, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8832694050323789675, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      propertyPath: m_TagString
-      value: boss
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7663715136998551627, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8832694050323789675, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
-      insertIndex: 4
-      addedObject: {fileID: 275967402}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
 --- !u!1001 &2123127430848152087
 PrefabInstance:

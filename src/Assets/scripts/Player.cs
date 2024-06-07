@@ -61,7 +61,7 @@ public class Player : Humans
         staminaBar.SetStamina(maxStamina - 25f);
         attackDmg = 10;
         fireDmg = 35;
-        knockBack = new Vector2(-3f, 0.0f);
+        knockBack = new Vector2(-.1f, 0.0f);
 
         DisplayStats();
         anim.isDead = false;
@@ -85,6 +85,7 @@ public class Player : Humans
                     //{
                     //    Invoke("NoLongerAttacking", 1f);
                     //}
+                    control.rb.AddForce(new Vector2(0,0), ForceMode2D.Impulse);
                 }
                 else if(anim.isDead == true) 
                 {
