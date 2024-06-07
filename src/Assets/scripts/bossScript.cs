@@ -14,6 +14,7 @@ public class bossScript : Humans
 
 
     public GameObject bossHealthUI;
+    public BossHealthMonitor healthBar;
     public ChildCollision cC;
 
     private float speed;
@@ -40,8 +41,6 @@ public class bossScript : Humans
     private bool dashAttack;
     private bool closeAttack;
     bool canUseDash;
-
-    public Slider healthBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,8 +49,7 @@ public class bossScript : Humans
         anime = GetComponent<bossAnimator>();
         EnemyRb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
-        healthBar.maxValue = currentHealth;
-        healthBar.value = currentHealth;
+        healthBar.MaxHealth(currentHealth);
         knockBack = new Vector2(3f, 0.0f);
         attackRanf = 2.2f;
         attackRanTwo = 1.4f;
@@ -65,7 +63,6 @@ public class bossScript : Humans
         {
             attackStarted = true;
             bossHealthUI.SetActive(true);
-            currentHealth = healthBar.value;
             behaviour_State = BehaviourState.Chasing;
             cC.bossFightStart = false;
         }
@@ -100,7 +97,8 @@ public class bossScript : Humans
                 speed = 0f;
                 anime.isSwinging = false;
                 EnemyRb.AddForce(knockBack, ForceMode2D.Impulse);
-                anime.StunnedAnimation();
+                anime.StunnedAnimation(); 
+                healthBar.SetHealth(currentHealth);
                 //StartCoroutine(DelayIdle());
                 behaviour_State = BehaviourState.Idle;
                 break;
