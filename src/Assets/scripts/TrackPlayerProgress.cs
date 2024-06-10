@@ -9,7 +9,7 @@ public class TrackPlayerProgress : MonoBehaviour
     public GameObject levelOneDoor; // wehn scene is active collect all enemies tagged "enemies" in array. // when all enemies dead open door gameobject
     public GameObject LevelTwoDoor;
     public GameObject[] enemiesInScene;
-    public GameObject bossInScene;
+    public GameObject[] bossInScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,20 +22,19 @@ public class TrackPlayerProgress : MonoBehaviour
         //Find active enemies in scene
         // Find all GameObjects with the tag "enemy" and add them to the enemies array
         enemiesInScene = GameObject.FindGameObjectsWithTag("Enemy");
-        bossInScene = GameObject.FindGameObjectWithTag("boss");
-        if (enemiesInScene.Length == 0)
+        bossInScene = GameObject.FindGameObjectsWithTag("boss");
+        if(LevelOne.active == true)
         {
-            if(LevelOne.active == true)
+            if(enemiesInScene.Length == 0)
             {
                 levelOneDoor.SetActive(true);
             }
-            if (LevelTwo.active == true); // and boss is dead
+        }
+        if(LevelTwo.active == true)
+        {
+            if(bossInScene.Length == 0)
             {
-                if (bossInScene.active == false)
-                {
-
-                    LevelTwoDoor.SetActive(true);
-                }
+                LevelTwoDoor.SetActive(true);
             }
         }
     }

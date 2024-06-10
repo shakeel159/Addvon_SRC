@@ -31700,7 +31700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3221667599748162367, guid: 4b888c4a8b2cfbd489d9bfde7a9b4d27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -53.7
+      value: -54.15
       objectReference: {fileID: 0}
     - target: {fileID: 3221667599748162367, guid: 4b888c4a8b2cfbd489d9bfde7a9b4d27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -52963,7 +52963,7 @@ MonoBehaviour:
   levelOneDoor: {fileID: 161922961}
   LevelTwoDoor: {fileID: 2083518711}
   enemiesInScene: []
-  bossInScene: {fileID: 0}
+  bossInScene: []
 --- !u!4 &996081641
 Transform:
   m_ObjectHideFlags: 0
@@ -53850,7 +53850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3221667599748162367, guid: 4b888c4a8b2cfbd489d9bfde7a9b4d27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -43.53
+      value: -43.986
       objectReference: {fileID: 0}
     - target: {fileID: 3221667599748162367, guid: 4b888c4a8b2cfbd489d9bfde7a9b4d27, type: 3}
       propertyPath: m_LocalPosition.z
@@ -87671,7 +87671,7 @@ PrefabInstance:
       objectReference: {fileID: 747004405}
     - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
       propertyPath: attackDmg
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2116766459589225582, guid: c5852057a1cfb2d47ab802c8f017299f, type: 3}
       propertyPath: healthBar
