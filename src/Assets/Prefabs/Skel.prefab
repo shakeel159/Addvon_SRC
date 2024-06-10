@@ -296,7 +296,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   flip: 0
-  chaseDistance: 10
+  chaseDistance: 5
   attackDistance: 1.2
   currentPatrolPoint: 0
   attackRanf: 0.6

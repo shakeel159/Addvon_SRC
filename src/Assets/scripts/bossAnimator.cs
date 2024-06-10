@@ -32,13 +32,13 @@ public class bossAnimator : MonoBehaviour
     {
         //isSwinging = true;
         animator.SetTrigger("attackOne");
-        isSwinging = false;
+        //isSwinging = false;
     }
     public void AttackMaleeAnimation()
     {
         animator.SetTrigger("attackTwo");
         //StartCoroutine(secondPartAniamtion());
-        isSwinging = false;
+        //isSwinging = false;
     }
     IEnumerator secondPartAniamtion()
     {

@@ -52,7 +52,7 @@ public class bossScript : Humans
         healthBar.MaxHealth(currentHealth);
         knockBack = new Vector2(3f, 0.0f);
         attackRanf = 2.2f;
-        attackRanTwo = 1.4f;
+        attackRanTwo = 1.2f;
         canUseDash = true;
     }
 
@@ -75,8 +75,8 @@ public class bossScript : Humans
                 //if(attackStarted == true) => wait#secForStateSwitch;
                 if (attackStarted == true)
                 {
-                    DelayIdle();
-                    //StartCoroutine(DelayChasing());
+                    //DelayIdle();
+                    StartCoroutine(DelayIdle());
                 }
                 break;
             case BehaviourState.Chasing:
@@ -104,11 +104,13 @@ public class bossScript : Humans
                 break;
             case BehaviourState.Attacking:
                 speed = 0f;
-                coll.isTrigger = true;
+                dashAttack = true;
+                //coll.isTrigger = true;
                 StartCoroutine(DelayAttack());
                 break;
             case BehaviourState.AttckingTwo:
                 speed = 0f;
+                closeAttack = true;
                 StartCoroutine(DelayAttack());
                 break;
             case BehaviourState.Dead:
@@ -142,11 +144,10 @@ public class bossScript : Humans
     }
     private void AttackAnim()// change state to attack and play attack animation when close to player
     {
-        if (Vector2.Distance(transform.position, player.transform.position) < attackRanf) //AND is swinging sword;
+        if (Vector2.Distance(transform.position, player.transform.position) < attackRanf) 
         {
             if (canUseDash == true)
             {
-                dashAttack = true;
                 Debug.Log("DASH COLLISION IN PLAY");
                 behaviour_State = BehaviourState.Attacking; //Temporarly play normal attack // future randomize attack from 1 to 3
                 canUseDash = false;
@@ -159,7 +160,6 @@ public class bossScript : Humans
             //coll.isTrigger = true;
             if (canUseDash == false)
             {
-                closeAttack = true;
                 Debug.Log("Mallee COLLISION IN PLAY");
                 behaviour_State = BehaviourState.AttckingTwo;
             }
@@ -184,10 +184,11 @@ public class bossScript : Humans
 
         transform.localScale = scale;
     }
-    private void DelayIdle()
+    private IEnumerator DelayIdle()
     {
         if (anime.isDead == false)
         {
+            yield return new WaitForSeconds(2);
             if (Vector2.Distance(transform.position, player.transform.position) < attackRanTwo)
             {
                 behaviour_State = BehaviourState.AttckingTwo;
@@ -227,8 +228,6 @@ public class bossScript : Humans
     }
     public IEnumerator DelayAttack()
     {
-        float dashDMG = attackDmg;
-        float maleeDMG = attackDmg - 5;
         if (anime.isDead == false)
         {
             if (dashAttack == true)
@@ -236,14 +235,14 @@ public class bossScript : Humans
                 anime.AttackAnimation();
                 yield return new WaitForSeconds(1.5f);
                 anime.isSwinging = true;
-                BasicAttack(dashDMG);
+                BasicAttack(attackDmg);
             }
             if(closeAttack == true)
             {
                 anime.AttackMaleeAnimation();
                 yield return new WaitForSeconds(1f);
                 anime.isSwinging = true;
-                BasicAttack(maleeDMG);
+                BasicAttack(attackDmg + 5);
             }
         }
         //StartCoroutine(DelayIdle());
@@ -254,20 +253,18 @@ public class bossScript : Humans
         if(dashAttack == true)
         {
             hitplayerFront = Physics2D.OverlapCircleAll(attackPointFront.position, attackRanf, playerLayer);
-            dashAttack = false;
         }
         if(closeAttack == true)
         {
-            hitplayerFront = Physics2D.OverlapCircleAll(attackPointFrontMalee.position, attackRanf, playerLayer);
-            closeAttack = false;
+            hitplayerFront = Physics2D.OverlapCircleAll(attackPointFrontMalee.position, attackRanTwo, playerLayer);
         }
 
         foreach (var playerObject in hitplayerFront)
         {
             if (playerObject.GetComponent<Player>().isHit == true)
             {
-                //Invoke("returnNotHit", .4f);
-                returnNotHit();
+                Invoke("returnNotHit", .4f);
+                //returnNotHit();
             }
             else if (playerObject.GetComponent<Player>().isHit == false && anime.isSwinging == true)
             {
@@ -275,6 +272,9 @@ public class bossScript : Humans
                 playerObject.GetComponent<Player>().DmgTaken(dmg);
             }
         }
+        dashAttack = false;
+        closeAttack = false;
+        anime.isSwinging = false;   
     }
     private void returnNotHit()
     {

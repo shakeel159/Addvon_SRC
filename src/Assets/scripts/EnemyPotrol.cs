@@ -88,6 +88,7 @@ public class EnemyPotrol : Humans
                 //Vector2 newPosition = this.transform.position;
                 //newPosition.y = -.5f;
                 //transform.position = newPosition;
+                this.gameObject.tag = "Dead";
                 break;              
         }
         if(anime.isDead == false)

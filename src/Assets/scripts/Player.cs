@@ -133,7 +133,6 @@ public class Player : Humans
         {
             anim.isDead = true;
         }
-
         anim.JumpAnimation();
         control.InteractButton();
 

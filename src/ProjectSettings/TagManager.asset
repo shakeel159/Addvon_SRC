@@ -18,6 +18,8 @@ TagManager:
   - Board
   - Npc
   - boss
+  - Dead
+  - Dummy
   layers:
   - Default
   - TransparentFX
